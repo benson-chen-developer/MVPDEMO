@@ -1,0 +1,20 @@
+﻿@model MVC.Models.Product
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Product Details (Strongly Typed View)</h2>
+<ul>
+    <li><strong>ID:</strong> @Model.Id</li>
+    <li><strong>Name:</strong> @Model.Name</li>
+    <li><strong>Price:</strong> $@Model.Price</li>
+</ul>
+
+
+@await Html.PartialAsync("_ProductDetails", Model)
+
+
+@{
+    await Html.RenderPartialAsync("_ProductDetails", Model);
+} 

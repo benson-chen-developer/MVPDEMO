@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "ServiceLifetimes";
+}
+
+
+<h2>Service Lifetimes</h2>
+
+<h2>Singleton:</h2>
+<p>@ViewData["Singleton"]</p>
+
+<h2>Scoped (First Call):</h2>
+<p>@ViewData["Scoped1"]</p>
+
+<h2>Scoped (Second Call, Same Request):</h2>
+<p>@ViewData["Scoped2"]</p>
+
+<h2>Transient (First Call):</h2>
+<p>@ViewData["Transient1"]</p>
+
+<h2>Transient (Second Call, Should Be Different):</h2>
+<p>@ViewData["Transient2"]</p>
+

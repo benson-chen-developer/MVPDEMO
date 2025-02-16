@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Registration Successful";
+}
+@using YourNamespace.Models
+@model UserViewModel
+
+<h3>Registration Successful</h3>
+
+<p><strong>Username:</strong> @Model.Username</p>
+<p><strong>Email:</strong> @Model.Email</p>
+<p><strong>Password:</strong> @Model.Password</p>
+<p><strong>Confirm Password:</strong> @Model.ConfirmPassword</p>
+
+<a asp-action="Register" class="btn btn-primary">Register Another User</a>
+
+<a href="/" class="btn btn-primary">Go to Home</a>
