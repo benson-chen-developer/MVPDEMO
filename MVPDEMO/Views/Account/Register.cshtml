@@ -1,4 +1,4 @@
-﻿@model YourNamespace.Models.UserViewModel
+﻿@model YourNamespace.Models.User
 
 @{
     ViewData["Title"] = "User Registration";
@@ -8,6 +8,7 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div>
+                Tlak
                 <div>
                     <h3>User Registration</h3>
                 </div>
@@ -29,17 +30,6 @@
                             <label asp-for="Password" class="form-label"></label>
                             <input asp-for="Password" class="form-control" />
                             <span asp-validation-for="Password" class="text-danger"></span>
-                        </div>
-
-                        <div class="mb-3">
-                            <label asp-for="ConfirmPassword" class="form-label"></label>
-                            <input asp-for="ConfirmPassword" class="form-control" />
-                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-                        </div>
-
-                        <div class="mb-3">
-                            <label asp-for="ProfilePicture" class="form-label">Profile Picture (Optional)</label>
-                            <input asp-for="ProfilePicture" type="file" class="form-control" />
                         </div>
 
                         <button type="submit" class="btn btn-primary w-100">Sign Up</button>
